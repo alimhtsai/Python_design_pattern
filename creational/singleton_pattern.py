@@ -1,7 +1,7 @@
-'''classic GoF implementation'''
 from typing import Any
 
 
+'''classic GoF implementation'''
 class ClassicSingleton:
     # class-level variable to store single class instance
     _instance = None
@@ -55,6 +55,7 @@ class MetaSingletonLazy(type):
         return cls._instances[cls]
 
 
+'''the implementation of MetaSingletonLazy'''
 class ConcreteMetaSingletonLazy(metaclass=MetaSingletonLazy):
     def some_business_logic(self):
         pass
@@ -80,6 +81,7 @@ class MetaSingletonEager(type):
         return cls._instances[cls]
 
 
+'''the implementation of MetaSingletonEager'''
 class ConcreteMetaSingletonEager(metaclass=MetaSingletonEager):
     def __init__(self) -> None:
         pass
