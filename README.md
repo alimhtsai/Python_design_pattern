@@ -6,7 +6,8 @@
 ### Creational Design Pattern
 The design patterns that deal with the creation of an object.
 - [x] Singleton Pattern
-  - **When to use**: when you want to control access to a shared resource
+  - **Purpose**: ensure that no more than a single instance of a class exists.
+  - **When to use**: when you want to control access to a shared resource.
   - **Examples**: Loggers, caching, thread pools, database connection, configuration access, ...
 - [ ] Factory Method Pattern
 - [ ] Builder Pattern

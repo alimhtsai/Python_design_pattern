@@ -1,3 +1,4 @@
+import threading
 from typing import Any
 
 
@@ -87,6 +88,24 @@ class ConcreteMetaSingletonEager(metaclass=MetaSingletonEager):
         pass
 
 
+'''thread-safe implementation'''
+class ThreadSafeSingleton:
+    # class-level variable to store single class instance
+    _instance = None
+
+    # class-level lock to ensure thread safety
+    _lock = threading.Lock()
+
+    def __new__(cls: Any) -> Any:
+
+        # acquire the lock to ensure thread safety
+        with cls._lock:
+            if not cls._instance:
+                cls._instance = super().__new__(cls)
+
+        return cls._instance
+
+
 # classic GoF implementation
 s1 = ClassicSingleton.get_instance()
 
@@ -98,3 +117,6 @@ s3 = ConcreteMetaSingletonLazy()
 
 # best singleton implementation with eager loading
 s4 = ConcreteMetaSingletonEager()
+
+# thread-safe implementation
+s5 = ThreadSafeSingleton()
