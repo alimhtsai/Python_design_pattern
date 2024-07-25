@@ -9,7 +9,12 @@ The design patterns that deal with the creation of an object.
   - **Purpose**: ensure that no more than a single instance of a class exists.
   - **When to use**: when you want to control access to a shared resource.
   - **Examples**: Loggers, caching, thread pools, database connection, configuration access, ...
-- [ ] Factory Method Pattern
+- [x] Factory Method Pattern
+  - **Purpose**: allow a class to defer instantiation to its subclasses.
+  - **When to use**: 
+    - when a caller can't anticipate the type of objects it must create.
+    - when you have many objects of a common type.
+  - **Examples**: strategy design pattern, object pool (facilitate caching)
 - [ ] Builder Pattern
 
 ### Structural Design Pattern
