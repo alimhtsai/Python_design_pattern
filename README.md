@@ -11,11 +11,16 @@ The design patterns that deal with the creation of an object.
   - **Examples**: Loggers, caching, thread pools, database connection, configuration access, ...
 - [x] Factory Method Pattern
   - **Purpose**: allow a class to defer instantiation to its subclasses.
-  - **When to use**: 
+  - **When to use**:
     - when a caller can't anticipate the type of objects it must create.
     - when you have many objects of a common type.
   - **Examples**: strategy design pattern, object pool (facilitate caching)
-- [ ] Builder Pattern
+- [x] Builder Pattern
+  - **Purpose**: encapsulate reusable logic of building complex logic.
+  - **When to use**:
+    - when you have a complex class with many constructors.
+    - when you have to build complex composite tree objects.
+  - **Examples**: document readers
 
 ### Structural Design Pattern
 The design patterns in this category deal with the class structure such as Inheritance and Composition.
