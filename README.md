@@ -24,7 +24,10 @@ The design patterns that deal with the creation of an object.
 
 ### Structural Design Pattern
 The design patterns in this category deal with the class structure such as Inheritance and Composition.
-- [ ] Adapter Pattern
+- [x] Adapter Pattern
+  - **Purpose**: convert the interface contract of one class to be compatible with another
+  - **When to use**: when you have an existing class or contract that you would like to reuse but its interface isn't compatible with the rest of your code.
+  - **Examples**: XML to JSON adapter
 
 ### Behavioral Design Pattern
 This type of design pattern provides solutions for better interaction between objects, how to provide loose coupling, and flexibility to extend easily in the future.
