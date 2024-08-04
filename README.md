@@ -31,6 +31,9 @@ The design patterns in this category deal with the class structure such as Inher
 
 ### Behavioral Design Pattern
 This type of design pattern provides solutions for better interaction between objects, how to provide loose coupling, and flexibility to extend easily in the future.
-- [ ] Strategy Pattern
+- [x] Strategy Pattern
+  - **Purpose**: extract related algorithms (or any piece of code) into separate classes and define a common interface for them.
+  - **When to use**: when you want to abstract the business logic of a class from its implementation details.
+  - **Examples**: discount handlers
 - [ ] Observer Pattern
 - [ ] State Pattern
